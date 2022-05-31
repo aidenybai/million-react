@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "million": "^1.9.8-4"
+  },
+  "devDependencies": {
+    "vite": "^2.9.9"
+  }
+}
