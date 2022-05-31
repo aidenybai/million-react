@@ -15,7 +15,9 @@ function Counter({ init }) {
 
 const root = createRoot(document.querySelector('#app'));
 
-// Renders (or cyclical logic) MUST be wrapped within the compat() function.
+// Anything that references a component at the root level MUST be wrapped
+// within the compat() function.
+
 // This is to prevent the component from being created before it is rendered.
 compat(() => {
   root.render(<Counter init={0} />);
