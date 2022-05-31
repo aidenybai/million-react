@@ -1,4 +1,6 @@
-import { createRoot, useState, compat } from 'million/react';
+import { compat } from 'million/react';
+import { useState } from 'react';
+import { createRoot } from 'react-dom';
 
 function Counter({ init }) {
   const [count, setCount] = useState(init);
