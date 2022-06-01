@@ -10,7 +10,12 @@ Refer to the [Million documentation](https://millionjs.org) to understand the in
 
 ## Setup
 
-You can either fork the project, or clone it directly.
+The easiest way to use Million is it open it in Stackblitz:
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/aidenybai/million-react-compat)
+
+
+If you want to use it locally, you can either fork the project, or clone it directly.
 
 Here is how you clone it directly:
 
@@ -20,6 +25,8 @@ cd million-react-compat
 npm install
 npm run dev
 ```
+
+Once you've done that, open `script.jsx` and start tinkering!
 
 ## Usage
 
