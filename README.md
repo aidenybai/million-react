@@ -6,6 +6,8 @@
 
 The purpose of this project is to utilize Million's Virtual DOM and allow users to spin up a project that allows them to write basic React code and see it rendered.
 
+The idea is to have much faster rendering (a compiler optimizes virtual DOM beforehand) while ensuring the same developer experience React provides.
+
 Refer to the [Million documentation](https://millionjs.org) to understand the internals and the [React beta documentation](https://beta.reactjs.org/apis) to reference the API
 
 ## Setup
@@ -13,7 +15,6 @@ Refer to the [Million documentation](https://millionjs.org) to understand the in
 The easiest way to use Million is it open it in Stackblitz:
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/aidenybai/million-react-compat)
-
 
 If you want to use it locally, you can either fork the project, or clone it directly.
 
