@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { createRoot } from 'react-dom';
 
 function Counter({ init }) {
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState(init);
 
   return (
     <div>
