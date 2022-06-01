@@ -5,7 +5,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "million": "^1.10.0"
+    "million": "^1.10.1"
   },
   "devDependencies": {
     "vite": "^2.9.9"
