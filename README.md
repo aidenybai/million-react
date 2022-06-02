@@ -32,27 +32,9 @@ This is a Vite project. There are two ways to run it:
 - `npm dev`: runs the project in development mode.
 - `npm build`: bundles the project for production.
 
-## Available Hooks
-
-- `useState`
-- `useEffect`
-- `useContext`
-- `useReducer`
-- `useCallback`
-- `useMemo`
-- `useRef`
-- `useLayoutEffect`
-
 ## Limitations
 
-This list is nonexhaustive:
+View the commented out exports in:
 
-- Fragments
-- Class components
-- Portals
-- Suspense
-- SSR
-- `forwardRef`
-- `memo`
-- Children API
-- _and more..._
+- [`react`](https://github.com/aidenybai/million/blob/main/src/react/react.ts)
+- [`react-dom`](https://github.com/aidenybai/million/blob/main/src/react/react-dom.ts)
