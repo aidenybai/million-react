@@ -16,9 +16,6 @@ function Counter({ init }) {
 
 const root = createRoot(document.querySelector('#app'));
 
-// Anything that references a component at the root level MUST be wrapped
-// within the compat() function.
 compat(() => {
-  // Generally, if there is something erroring, shove rendering logic inside here
   root.render(<Counter init={0} />);
 });
