@@ -1,6 +1,6 @@
 import { compat } from 'million/react';
 import { useState } from 'react';
-import { createRoot } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
 function Counter({ init }) {
   const [value, setValue] = useState(init);
