@@ -1,4 +1,3 @@
-import { compat } from 'million/react';
 import { useState } from 'react';
 import { createRoot } from 'react-dom/client';
 
@@ -16,6 +15,4 @@ function Counter({ init }) {
 
 const root = createRoot(document.querySelector('#app'));
 
-compat(() => {
-  root.render(<Counter init={0} />);
-});
+root.render(<Counter init={0} />);
