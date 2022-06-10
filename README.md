@@ -18,13 +18,13 @@ Think of it as if [React](https://preactjs.com/)'s API and [Svelte](https://svel
 
 The easiest way to use Million is it open it in StackBlitz:
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/aidenybai/million-react-compat)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/aidenybai/million-react)
 
 If you want to use it locally, you can either fork the project, or clone it directly.
 
 ```
-git clone https://github.com/aidenybai/million-react-compat
-cd million-react-compat
+git clone https://github.com/aidenybai/million-react
+cd million-react
 npm install
 npm run dev
 ```
