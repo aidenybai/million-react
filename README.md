@@ -1,12 +1,18 @@
-> **⚠️ Please note this is a very early stage demonstration of compatibility with the React 18. ⚠️**
->
-> [Limitations exist](#limitations), please proceed with caution. Not everything will work out of the box, as this project is just a proof of concept. Don't use this in production, **you have been warned!**
+> ⚠️ _This is a very early stage demonstration of React 18 support._ ⚠️
 
-# [Million](https://github.com/aidenybai/million)/React compatibility starter
+# ⚛️ [Million](https://github.com/aidenybai/million) + React
 
-This project allows you leverage Million's Virtual DOM while writing React code. Get faster rendering (a compiler optimizes virtual DOM beforehand) while ensuring the same developer experience React provides.
+### Write the same modern React with a faster Virtual DOM
 
-Refer to the [Million documentation](https://millionjs.org) to understand the internals and the [React beta documentation](https://beta.reactjs.org/apis) to reference the API
+Million makes creating user interfaces as easy as [React](https://reactjs.org), but with faster performance and smaller bundle size for the end user. By computing the user interface beforehand with a compiler, Million reduces the overhead of traditional Virtual DOM.
+
+> Okay cool... but why should I use Million if I can just use [Preact](https://preactjs.com/) if I need something a bit more lightweight?
+
+While alternative libraries like [Preact](https://preactjs.com/) reduce bundle sizes by efficient code design, Million takes it a step further by **leveraging compilation** to make a quantum leap in improving bundle size **and** render speed.
+
+Think of it as if [React](https://preactjs.com/)'s API and [Svelte](https://svelte.dev/)'s compiler had a baby. [A baby with _**super speed! 👶**_](https://millionjs.org/benchmarks)
+
+> Refer to the [Million docs](https://millionjs.org) for Virtual DOM and the [React docs](https://beta.reactjs.org/apis) for the API
 
 ## Quick Start
 
@@ -34,7 +40,15 @@ This is a Vite project. There are two ways to run it:
 
 ## Limitations
 
-View the commented out exports in:
+While the majority of commonly used React API features are supported, such as state, components, fragments, etc., there are more advanced features that may not be supported.
+
+For instance, while class components are supported, some lifecycle methods are not or act as passthroughs.
+
+Additionally, because [React Fiber](https://www.velotio.com/engineering-blog/react-fiber-algorithm) is not supported by default, some features, particularly hooks, are not implemented. Furthermore, some testing or secret utilities are commented out exports in:
 
 - [`react`](https://github.com/aidenybai/million/blob/main/src/react/react.ts)
 - [`react-dom`](https://github.com/aidenybai/million/blob/main/src/react/react-dom.ts)
+
+## License
+
+Million is [MIT-licensed](https://github.com/aidenybai/million/blob/main/LICENSE) open-source software and [research project](https://arxiv.org/abs/2202.08409) by [Aiden Bai](https://aidenybai.com).
