@@ -44,10 +44,9 @@ While the majority of commonly used React API features are supported, such as st
 
 For instance, while class components are supported, some lifecycle methods are not or act as passthroughs.
 
-Additionally, because [React Fiber](https://www.velotio.com/engineering-blog/react-fiber-algorithm) is not supported by default, some features, particularly hooks, are not implemented. Furthermore, some testing or secret utilities are commented out exports in:
+Additionally, because [React Fiber](https://www.velotio.com/engineering-blog/react-fiber-algorithm) is not supported by default, some features, particularly hooks, are not implemented.
 
-- [`react`](https://github.com/aidenybai/million/blob/main/src/react/react.ts)
-- [`react-dom`](https://github.com/aidenybai/million/blob/main/src/react/react-dom.ts)
+_TL;DR: The best way to see if something is supported is to import it._
 
 ## License
 
