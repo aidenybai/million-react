@@ -10,6 +10,7 @@
     "million": "^1.10.15-0"
   },
   "devDependencies": {
+    "requestidlecallback-polyfill": "^1.0.2",
     "vite": "^2.9.9"
   }
 }
