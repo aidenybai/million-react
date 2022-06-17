@@ -9,9 +9,12 @@
   height: 6em;
   padding: 1.5em;
   will-change: filter;
+  transition: filter 0.5s;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 3em #646cffaa);
+  /* Add a transition */
+  transition: filter 0.5s;
 }
 
 @keyframes logo-spin {
