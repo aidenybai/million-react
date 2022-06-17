@@ -9,9 +9,12 @@
   height: 6em;
   padding: 1.5em;
   will-change: filter;
+  transition: filter 0.5s;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 3em #646cffaa);
+  /* Add a transition */
+  transition: filter 0.5s;
 }
 
 @keyframes logo-spin {
@@ -35,4 +38,19 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* Style for code block */
+code {
+  font-family: monospace;
+  font-size: 1.2em;
+  background: #646cffaa;
+  border-radius: 0.3em;
+  padding: 0.1em 0.3em;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+code:hover {
+  text-decoration: underline;
 }
