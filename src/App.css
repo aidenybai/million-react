@@ -39,3 +39,18 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Style for code block */
+code {
+  font-family: monospace;
+  font-size: 1.2em;
+  background: #646cffaa;
+  border-radius: 0.3em;
+  padding: 0.1em 0.3em;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+code:hover {
+  text-decoration: underline;
+}
