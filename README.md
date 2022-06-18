@@ -44,7 +44,7 @@ While the majority of commonly used React API features are supported, such as st
 
 For instance, while class components are supported, some lifecycle methods are not or act as passthroughs.
 
-Additionally, because [React Fiber](https://www.velotio.com/engineering-blog/react-fiber-algorithm) is not supported by default, some features, particularly hooks, are not implemented.
+Additionally, because [React Fiber](https://www.velotio.com/engineering-blog/react-fiber-algorithm) is not supported by default, some features, particularly Suspense, are implemented only as passthrough components.
 
 _TL;DR: The best way to see if something is supported is to import it._
 
