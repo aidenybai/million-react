@@ -7,10 +7,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "million": "^1.10.15-0"
+    "million": "^1.11.0-1"
   },
   "devDependencies": {
-    "requestidlecallback-polyfill": "^1.0.2",
     "vite": "^2.9.9"
   }
 }
