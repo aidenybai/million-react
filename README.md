@@ -16,7 +16,7 @@ Think of it as if [React](https://preactjs.com/)'s API and [Svelte](https://svel
 
 ## Quick Start
 
-The easiest way to use Million is it open it in StackBlitz:
+The easiest way to use Million is to open it in StackBlitz:
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/aidenybai/million-react)
 
