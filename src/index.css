@@ -44,21 +44,23 @@ h1 {
 
 button {
   border-radius: 8px;
-  border: 1px solid #1169d3;
+  border: 1px solid #0c52a8;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
+  box-shadow: 0 5px 0 #0c52a8;
   background-color: #1574ef;
   cursor: pointer;
   transition: border-color 0.1s;
 }
-button:hover {
-  border-color: #569efb;
-}
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+button:active {
+  box-shadow: none;
+  transform: translateY(5px);
 }
 
 @media (prefers-color-scheme: light) {
