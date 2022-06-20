@@ -13,8 +13,7 @@
 }
 .logo:hover {
   filter: drop-shadow(0 0 3em #646cffaa);
-  /* Add a transition */
-  transition: filter 0.5s;
+  transition: filter 0.1s;
 }
 
 @keyframes logo-spin {
@@ -37,20 +36,16 @@
 }
 
 .read-the-docs {
-  color: #888;
+  color: #979ea9;
 }
 
-/* Style for code block */
 code {
-  font-family: monospace;
-  font-size: 1.2em;
-  background: #646cffaa;
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  font-size: 1em;
+  background: #292929;
+  border: 1px solid #3f3f3f;
   border-radius: 0.3em;
   padding: 0.1em 0.3em;
   white-space: pre-wrap;
   word-break: break-all;
-}
-
-code:hover {
-  text-decoration: underline;
 }

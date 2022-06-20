@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -5,8 +7,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #ecedef;
+  background-color: #111;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -17,11 +19,11 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+  color: #0099ff;
+  text-decoration: underline;
 }
 a:hover {
-  color: #535bf2;
+  color: #1574ef;
 }
 
 body {
@@ -30,6 +32,9 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #111 300px),
+    fixed 0 0 / 20px 20px radial-gradient(#313131 1px, transparent 0),
+    fixed 10px 10px / 20px 20px radial-gradient(#313131 1px, transparent 0);
 }
 
 h1 {
@@ -39,17 +44,17 @@ h1 {
 
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: 1px solid #1169d3;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #1574ef;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.1s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #569efb;
 }
 button:focus,
 button:focus-visible {
@@ -58,13 +63,26 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #000;
+    background-color: #fff;
+  }
+  body {
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 300px
+      ),
+      fixed 0 0 / 20px 20px radial-gradient(#d1d1d1 1px, transparent 0),
+      fixed 10px 10px / 20px 20px radial-gradient(#d1d1d1 1px, transparent 0);
   }
   a:hover {
-    color: #747bff;
+    color: #1574ef;
   }
   button {
-    background-color: #f9f9f9;
+    color: #fff;
+  }
+  code {
+    background: #f2f2f2;
+    border-color: #e6e6e6;
   }
 }

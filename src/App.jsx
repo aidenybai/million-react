@@ -29,9 +29,7 @@ function App() {
         Click on the Million and React logos to learn more
       </p>
       <p>
-        <a href="https://github.com/aidenybai/million-react">
-          Fork the GitHub repo
-        </a>
+        <a href="https://github.com/aidenybai/million-react">Fork on GitHub</a>
       </p>
     </div>
   );
