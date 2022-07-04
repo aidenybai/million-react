@@ -35,8 +35,8 @@ Once you've done that, open `src/App.jsx` and start tinkering!
 
 This is a Vite project. There are two ways to run it:
 
-- `npm dev`: runs the project in development mode.
-- `npm build`: bundles the project for production.
+- `npm run dev`: runs the project in development mode.
+- `npm run build`: bundles the project for production.
 
 ## Limitations
 
