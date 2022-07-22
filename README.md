@@ -95,6 +95,3 @@ _TL;DR: The best way to see if something is supported is to import and try it._
 
 Million is [MIT-licensed](https://github.com/aidenybai/million/blob/main/LICENSE) open-source software and [research project](https://arxiv.org/abs/2202.08409) by [Aiden Bai](https://aidenybai.com).
 
-```
-
-```
