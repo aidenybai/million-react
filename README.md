@@ -23,10 +23,9 @@ The easiest way to use Million is to open it in StackBlitz:
 If you want to use it locally, you can either fork the project, or clone it directly.
 
 ```
-git clone https://github.com/aidenybai/million-react
+git clone https://github.com/aidenybai/million-react.git
 cd million-react
 npm install
-npm run dev
 ```
 
 Once you've done that, open `src/App.jsx` and start tinkering!
@@ -38,6 +37,48 @@ This is a Vite project. There are two ways to run it:
 - `npm run dev`: runs the project in development mode.
 - `npm run build`: bundles the project for production.
 
+Once you've got everything setup, you can use Million by just writing React code. There are however two new API features that divert from React:
+
+#### `useDelta` hook
+
+This hook returns helper functions for creating [Deltas](https://millionjs.org/docs/api/advanced/delta) that are used to invoke imperative operations on a node's children via Virtual DOM.
+
+```jsx
+const delta = useDelta();
+
+delta.create(0);
+delta.update(1);
+delta.remove(2);
+
+return (
+  <ul delta={delta}>
+    <li>foo</li>
+    <li>bar</li>
+    <li>baz</li>
+  </ul>
+);
+```
+
+#### `useDeltaList` hook
+
+This hook creates a reactive value for arrays and produces deltas that can be used to update the array.
+
+```jsx
+const [list, delta] = useDeltaList([]);
+
+list.push('foo');
+list.push('bar');
+list.push('baz');
+
+return (
+  <ul delta={delta}>
+    {list.map((item) => (
+      <li>{item}</li>
+    ))}
+  </ul>
+);
+```
+
 ## Limitations
 
 While the majority of commonly used React API features are supported, such as state, components, fragments, etc., there are more advanced features that may not be supported.
@@ -46,8 +87,14 @@ For instance, while class components are supported, some lifecycle methods are n
 
 Additionally, because [React Fiber](https://www.velotio.com/engineering-blog/react-fiber-algorithm) is not supported by default, some features, particularly Suspense, are implemented only as passthrough components.
 
-_TL;DR: The best way to see if something is supported is to import it._
+Some libraries in the React ecosystem may not work out of the box with Million.
+
+_TL;DR: The best way to see if something is supported is to import and try it._
 
 ## License
 
 Million is [MIT-licensed](https://github.com/aidenybai/million/blob/main/LICENSE) open-source software and [research project](https://arxiv.org/abs/2202.08409) by [Aiden Bai](https://aidenybai.com).
+
+```
+
+```
