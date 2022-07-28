@@ -1,11 +1,11 @@
 lockfileVersion: 5.4
 
 specifiers:
-  million: ^1.12.0-beta.0
+  million: ^1.12.0
   vite: ^3.0.2
 
 dependencies:
-  million: 1.12.0-beta.0
+  million: 1.12.0
 
 devDependencies:
   vite: 3.0.2
@@ -245,8 +245,8 @@ packages:
       has: 1.0.3
     dev: true
 
-  /million/1.12.0-beta.0:
-    resolution: {integrity: sha512-tkhWAv/BPt1fpsrwkeFWl9CArT3IMA9jzTkUVzsp3EzQYJAgQNjvXl5ucfeDfDffyFs6S3G8dZSx3VCXZ24t6g==}
+  /million/1.12.0:
+    resolution: {integrity: sha512-T+5iGkxW6hdHcCXEWCWJ9LI+ooPzJ1QpbKxI0lSpdLbqvujvR89iySF8uN4d7EaMBVEVDiTSpqNCjl9P/KQVww==}
     dev: false
 
   /nanoid/3.3.4:
