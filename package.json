@@ -7,7 +7,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "million": "^1.12.4"
+    "@babel/plugin-syntax-jsx": "^7.21.4",
+    "million": "^2.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "vite": "^3.0.2"
