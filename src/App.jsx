@@ -4,18 +4,8 @@ import reactLogo from '/react.svg';
 import millionLogo from '/million.svg';
 import './App.css';
 
-function Button() {
-  const [count, setCount] = useState(0);
-  return (
-    <button onClick={() => setCount((count) => count + 1)}>
-      count is {count}
-    </button>
-  );
-}
-
-const ButtonBlock = block(Button);
-
 function App() {
+  const [count, setCount] = useState(0);
   return (
     <div className="App">
       <div>
@@ -28,7 +18,9 @@ function App() {
       </div>
       <h1>Million + React</h1>
       <div className="card">
-        <ButtonBlock />
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
@@ -43,4 +35,6 @@ function App() {
   );
 }
 
-export default App;
+const AppBlock = block(App);
+
+export default AppBlock;
